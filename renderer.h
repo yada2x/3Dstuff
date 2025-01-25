@@ -1,5 +1,5 @@
-#ifndef RENDERER.H
-#define RENDERER.H
+#ifndef RENDERER_H
+#define RENDERER_H
 
 #include "types.h"
 #include <SDL3/SDL.h>
@@ -16,9 +16,9 @@ class Renderer {
         int windowWidth;
         int windowHeight;
 
-        float rotation = 0;
-        float focalLength = 10;
-        float deltaTime = 0;
+        float rotation = 0.0f;
+        float focalLength = 10.0f;
+        float deltaTime = 0.0f;
 
         SDL_Renderer* renderer;
         std::vector<Point3D> points;
